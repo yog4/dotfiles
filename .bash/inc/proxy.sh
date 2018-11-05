@@ -2,9 +2,20 @@ proxy_print() {
     echo http_proxy=$http_proxy;
     echo https_proxy=$https_proxy;
     echo noproxy=$no_proxy
-    if [ "$(uname)" = "Darwin" ]; then
-        brew services list
-    fi
+}
+
+proxy_status() {
+    brew services list | grep --color=never 'Name\|cntlm'
+}
+
+proxy_stop() {
+    brew services stop cntlm
+    proxy_status
+}
+
+proxy_start() {
+    brew services start cntlm
+    proxy_status
 }
 
 proxy_unset() {

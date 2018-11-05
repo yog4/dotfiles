@@ -9,6 +9,12 @@
     "editor.renderControlCharacters": true,
     "editor.tabSize": 4,
     "editor.fontFamily": "DroidSansMonoForPowerlinePlusNerdFileTypesMono",
+    "editor.renderLineHighlight": "all",
+
+    "workbench.colorCustomizations":{
+        "editorLineNumber.activeForeground": "#fffb00",
+        "editor.lineHighlightBackground": "#f4f5fd1a"
+    },
 
     "terminal.integrated.fontFamily": "'DroidSansMonoForPowerlinePlusNerdFileTypesMono'",
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
@@ -96,5 +102,17 @@
     "telemetry.enableCrashReporter": false,
 
     "window.restoreWindows": "all",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.mode.active": "zen"
 }

@@ -37,7 +37,6 @@
         "/Users/changj2/src"
     ],
     "workbench.startupEditor": "none",
-    "workbench.editor.enablePreview": false,
     "workbench.commandPalette.preserveInput": true,
 
     "vsnotes.defaultNotePath": "/Users/lipscoda/Documents/notes",
@@ -114,5 +113,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.historyExplorer.enabled": true,
-    "gitlens.mode.active": "zen"
+    "gitlens.mode.active": "zen",
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }

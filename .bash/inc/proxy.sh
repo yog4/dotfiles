@@ -1,7 +1,7 @@
 proxy_print() {
     echo http_proxy=$http_proxy;
     echo https_proxy=$https_proxy;
-    echo noproxy=$no_proxy
+    echo no_proxy=$no_proxy
 }
 
 proxy_status() {

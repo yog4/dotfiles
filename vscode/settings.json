@@ -33,8 +33,10 @@
     "keyboard.dispatch": "keyCode",
 
     "projectManager.git.baseFolders": [
-        "/Users/lipscoda/code",
-        "/Users/changj2/src"
+        "/Users/sam/src"
+    ],
+    "projectManager.git.ignoredFolders": [
+        ".archive"
     ],
     "workbench.startupEditor": "none",
     "workbench.commandPalette.preserveInput": true,

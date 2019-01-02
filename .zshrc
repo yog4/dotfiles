@@ -13,6 +13,9 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    autoenv
+    zsh-syntax-highlighting
+    history
 )
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs virtualenv status)

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # source env file
-dotenv "$HOME/.env"
+dotenv "$HOME/.env.exports"
 if [ -f "$HOME/.local.env" ]; then
     dotenv "$HOME/.local.env"
 fi

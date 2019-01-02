@@ -110,9 +110,8 @@
     process = git-lfs filter-process
     required = true
 [credential]
-    helper = cache --timeout=2592000
-[http]
-    sslVerify = false
+	helper = !aws codecommit credential-helper $@
+	UseHttpPath = true
 [include]
     path = .alias.gitconfig
     path = .local.gitconfig
@@ -128,7 +127,7 @@
     prompt = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

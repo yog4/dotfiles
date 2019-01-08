@@ -72,5 +72,9 @@
   {
     "key": "alt+space",
     "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "shift+alt+cmd+b",
+    "command": "bookmarksExplorer.focus"
   }
 ]

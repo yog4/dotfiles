@@ -116,5 +116,26 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "gitlens.mode.active": "zen",
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "highlight.regexes": {
+        "(AWS::StepFunctions::StateMachine)": {
+            "filterFileRegex": ".*\\.(json|yaml|yml)",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#ffcc00",
+                    "color": "#ffcc00",
+                }
+            ]
+        },
+        "(Type: \"?)(AWS::[^\"\n]*)(\"?)": {
+            "filterFileRegex": ".*\\.(json|yaml|yml)",
+            "decorations":[
+                {
+                },
+                {
+                    "color": "#4de0ff"
+                }
+            ]
+        }
+    }
 }

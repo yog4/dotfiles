@@ -1,4 +1,5 @@
 {
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.6",
     "editor.rulers": [
         80
     ],
@@ -26,7 +27,7 @@
     "git.enableSmartCommit": true,
     "git.autofetch": true,
 
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     "http.proxyStrictSSL": false,
 
@@ -118,16 +119,25 @@
     "gitlens.mode.active": "zen",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "highlight.regexes": {
-        "(AWS::StepFunctions::StateMachine)": {
+        "(AWS::CodePipeline::Pipeline)": {
             "filterFileRegex": ".*\\.(json|yaml|yml)",
             "decorations": [
                 {
                     "overviewRulerColor": "#ffcc00",
-                    "color": "#ffcc00",
+                    "color": "#bb8855",
                 }
             ]
         },
-        "(Type: \"?)(AWS::[^\"\n]*)(\"?)": {
+        "(AWS::StepFunctions::StateMachine)": {
+            "filterFileRegex": ".*\\.(json|yaml|yml)",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#00ff22",
+                    "color": "#00ff22",
+                }
+            ]
+        },
+        "(Type: [\\'\"]?)(AWS::[^\"\\'\n]*)([\\'\"]?)": {
             "filterFileRegex": ".*\\.(json|yaml|yml)",
             "decorations":[
                 {
@@ -136,6 +146,26 @@
                     "color": "#4de0ff"
                 }
             ]
-        }
+        },
+        "([(//)#] ?)(TODO)(.*)": [
+            {
+            },
+            {
+                "overviewRulerColor": "#ffcc00",
+                "backgroundColor": "#ffcc00",
+                "color": "#1f1f1f",
+                "fontWeight": "bold"
+            }
+        ],
+        "([(//)#] ?)(FIXME)(.*)": [
+            {
+            },
+            {
+                "overviewRulerColor": "#ff0000",
+                "backgroundColor": "#ff0000",
+                "color": "#1f1f1f",
+                "fontWeight": "bold"
+            }
+        ]
     }
 }

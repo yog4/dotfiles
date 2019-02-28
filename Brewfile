@@ -96,3 +96,9 @@ cask "karabiner-elements"
 #
 # Other / Uncategorised / brew_save
 #
+brew "python"
+cask "firefox"
+cask "xquartz"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+brew "dos2unix"

@@ -45,8 +45,8 @@ brew "vim", args: ["with-override-system-vi"]
 # Version Control
 #
 brew "git"
-cask "sourcetree"
-cask "p4merge"
+#cask "sourcetree"
+#cask "p4merge"
 
 #
 # Microsoft
@@ -90,8 +90,8 @@ cask "copyclip"
 # Remote Desktop
 cask "cord"
 # Backup
-cask dropbox
-cask google-backup-and-sync
+cask "dropbox"
+cask "google-backup-and-sync"
 # cask "duplicati"
 # Keyboard
 # cask "karabiner-elements"
@@ -105,4 +105,7 @@ cask "xquartz"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 brew "dos2unix"
-cask keepassx
+cask "keepassx"
+cask "ticktick"
+cask "spotify"
+

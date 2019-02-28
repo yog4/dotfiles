@@ -90,6 +90,8 @@ cask "copyclip"
 # Remote Desktop
 cask "cord"
 # Backup
+cask dropbox
+cask google-backup-and-sync
 # cask "duplicati"
 # Keyboard
 # cask "karabiner-elements"
@@ -103,4 +105,4 @@ cask "xquartz"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 brew "dos2unix"
-brew keepassx
+cask keepassx

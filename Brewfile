@@ -39,7 +39,7 @@ brew "cntlm", restart_service: true
 # Editors
 #
 cask "visual-studio-code"
-brew "vim", args: ["with-override-system-vi"]
+brew "vim"
 
 #
 # Version Control
@@ -73,7 +73,7 @@ brew "kubernetes-cli"
 # Languages
 #
 cask "caskroom/versions/java8"
-#brew "node"
+brew "node"
 #brew "go"
 
 #
@@ -95,6 +95,8 @@ cask "google-backup-and-sync"
 # cask "duplicati"
 # Keyboard
 # cask "karabiner-elements"
+
+brew "awscli"
 
 #
 # Other / Uncategorised / brew_save

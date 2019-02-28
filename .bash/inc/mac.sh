@@ -715,8 +715,8 @@ mac_setup() {
     # Show the main window when launching Activity Monitor
     # defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
 
-    # Visualize CPU usage in the Activity Monitor Dock icon
-    defaults write com.apple.ActivityMonitor IconType -int 5
+    # Visualize CPU History in the Activity Monitor Dock icon
+    defaults write com.apple.ActivityMonitor IconType -int 6
 
     # Show all processes in Activity Monitor
     # defaults write com.apple.ActivityMonitor ShowCategory -int 0

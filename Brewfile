@@ -59,8 +59,8 @@ brew "mono"
 #
 cask "vagrant"
 cask "virtualbox"
-brew "packer"
-brew "qemu", args: ["with-sdl2"]
+#brew "packer"
+#brew "qemu", args: ["with-sdl2"]
 brew "cdrtools"
 
 #
@@ -73,25 +73,26 @@ brew "kubernetes-cli"
 # Languages
 #
 cask "caskroom/versions/java8"
-brew "node"
-brew "go"
+#brew "node"
+#brew "go"
 
 #
 # Password Management
 #
-brew "gopass"
-brew "vault"
+#brew "gopass"
+#brew "vault"
 
 #
 # Apps
 #
-cask "flycut"
+# Clipboard Manager
+cask "copyclip"
 # Remote Desktop
 cask "cord"
 # Backup
-cask "duplicati"
+# cask "duplicati"
 # Keyboard
-cask "karabiner-elements"
+# cask "karabiner-elements"
 
 #
 # Other / Uncategorised / brew_save
@@ -102,3 +103,4 @@ cask "xquartz"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 brew "dos2unix"
+brew keepassx

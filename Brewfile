@@ -102,6 +102,7 @@ brew "awscli"
 # Other / Uncategorised / brew_save
 #
 brew "python"
+brew "python2"
 cask "firefox"
 cask "xquartz"
 tap "homebrew/cask"

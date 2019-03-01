@@ -284,7 +284,7 @@ mac_setup() {
     mac_update_defaults com.apple.finder ShowPathbar -bool true
 
     # Display full POSIX path as Finder window title
-    # defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+    defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
     # Keep folders on top when sorting by name
     mac_update_defaults com.apple.finder _FXSortFoldersFirst -bool true
@@ -379,7 +379,7 @@ mac_setup() {
     mac_update_defaults com.apple.dock mineffect -string "scale"
 
     # Minimize windows into their application’s icon
-    mac_update_defaults com.apple.dock minimize-to-application -bool true
+    mac_update_defaults com.apple.dock minimize-to-application -bool false
 
     # Enable spring loading for all Dock items
     # defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true

@@ -102,6 +102,10 @@ mac_setup() {
     # Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
     # /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
+    # Show date in the menu bar clock
+    # https://www.tech-otaku.com/mac/setting-the-date-and-time-format-for-the-macos-menu-bar-clock-using-terminal/
+    defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
+
     # Display ASCII control characters using caret notation in standard text views
     # Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`
     # defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
@@ -182,7 +186,9 @@ mac_setup() {
 
     # Trackpad: map bottom right corner to right-click
     mac_update_defaults com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-    mac_update_defaults com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+    mac_update_defaults com.apple.driver.AppleBluetoothMultitouch.trackpad SecondClickThreshold -int 1
+    mac_update_defaults com.apple.driver.AppleBluetoothMultitouch.trackpad FirstClickThreshold -int 1
+    mac_update_defaults com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -int 0
     mac_update_defaults -currentHost NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
     mac_update_defaults -currentHost NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 

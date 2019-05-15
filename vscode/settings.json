@@ -1,12 +1,12 @@
 {
-    "python.pythonPath": "/usr/local/opt/python/bin/python3.6",
+    "python.pythonPath": "/usr/local/bin/python3",
     "editor.rulers": [
-        80
+        100
     ],
     "editor.renderIndentGuides": true,
     "editor.scrollBeyondLastLine": false,
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.renderControlCharacters": true,
     "editor.tabSize": 4,
     "editor.fontFamily": "DroidSansMonoForPowerlinePlusNerdFileTypesMono",
@@ -167,5 +167,6 @@
                 "fontWeight": "bold"
             }
         ]
-    }
+    },
+    "diffEditor.renderSideBySide": true
 }

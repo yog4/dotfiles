@@ -14,5 +14,6 @@ fi
 export DOTFILES_DIR="$(dirname $DIR)"
 
 for f in $(ls $DOTFILES_DIR/.bash/inc/); do
+    # echo "source $DOTFILES_DIR/.bash/inc/$f"
     source $DOTFILES_DIR/.bash/inc/$f
 done

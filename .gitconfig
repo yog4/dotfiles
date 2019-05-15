@@ -23,6 +23,7 @@
     untrackedCache = true
     quotepath = false
     longpaths = true
+	excludesfile = /Users/sam/.gitignore_global
 
 [color]
 
@@ -50,6 +51,7 @@
     untracked = cyan
 
 [commit]
+	template = /Users/sam/.stCommitMsg
 
     # https://help.github.com/articles/signing-commits-using-gpg/
 # gpgsign = true
@@ -127,7 +129,10 @@
     prompt = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	name = Sam Chang
+	email = sam.chang@healthdirect.org.au

@@ -104,7 +104,7 @@
     "telemetry.enableCrashReporter": false,
 
     "window.restoreWindows": "all",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -168,5 +168,6 @@
             }
         ]
     },
-    "diffEditor.renderSideBySide": true
+    "diffEditor.renderSideBySide": true,
+    "terminal.integrated.rendererType": "dom"
 }

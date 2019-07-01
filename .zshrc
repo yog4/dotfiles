@@ -16,6 +16,7 @@ plugins=(
     autoenv
     history
     aws
+    zsh-autosuggestions
     zsh-syntax-highlighting
 )
 # install zsh-syntax-highlighting in ~/.oh-my-zsh/custom/plugins
@@ -48,4 +49,4 @@ POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=255
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=93
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="❯"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="❯ "

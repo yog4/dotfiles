@@ -11,39 +11,29 @@
     "editor.tabSize": 4,
     "editor.fontFamily": "DroidSansMonoForPowerlinePlusNerdFileTypesMono",
     "editor.renderLineHighlight": "all",
-
-    "workbench.colorCustomizations":{
+    "workbench.colorCustomizations": {
         "editorLineNumber.activeForeground": "#fffb00",
         "editor.lineHighlightBackground": "#f4f5fd1a"
     },
-
     "terminal.integrated.fontFamily": "'DroidSansMonoForPowerlinePlusNerdFileTypesMono'",
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-
     "explorer.confirmDragAndDrop": false,
-
     "files.autoSave": "onFocusChange",
-
     "git.enableSmartCommit": true,
     "git.autofetch": true,
-
     "diffEditor.ignoreTrimWhitespace": false,
-
     "http.proxyStrictSSL": false,
-
     "keyboard.dispatch": "keyCode",
-
     "projectManager.git.baseFolders": [
-        "/Users/sam/src"
+        "/Users/changj2/src",
+        "/Users/changj2/src/cba/go-operator/src/github.ai.cba/appinfra",
     ],
     "projectManager.git.ignoredFolders": [
         ".archive"
     ],
     "workbench.startupEditor": "none",
     "workbench.commandPalette.preserveInput": true,
-
     "vsnotes.defaultNotePath": "/Users/lipscoda/Documents/notes",
-
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
@@ -52,18 +42,30 @@
     "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["k","j"],
-            "after": ["<Esc>"]
+            "before": [
+                "k",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         },
         {
-            "before": ["j","k"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before":["<Esc>"],
-            "after":[],
+            "before": [
+                "<Esc>"
+            ],
+            "after": [],
             "commands": [
                 {
                     "command": ":nohl"
@@ -71,7 +73,9 @@
             ]
         },
         {
-            "before": [";"],
+            "before": [
+                ";"
+            ],
             "after": [],
             "commands": [
                 {
@@ -81,7 +85,10 @@
             ]
         },
         {
-            "before": ["<leader>","p"],
+            "before": [
+                "<leader>",
+                "p"
+            ],
             "after": [],
             "commands": [
                 {
@@ -92,17 +99,15 @@
         }
     ],
     "vim.leader": "<space>",
-    "vim.handleKeys":{
+    "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
     },
-
     // Disable Telemetry
     // Enable usage data and errors to be sent to Microsoft.
     "telemetry.enableTelemetry": false,
     // Enable crash reports to be sent to Microsoft.
     "telemetry.enableCrashReporter": false,
-
     "window.restoreWindows": "all",
     "window.zoomLevel": 1,
     "gitlens.advanced.messages": {
@@ -139,17 +144,15 @@
         },
         "(Type: [\\'\"]?)(AWS::[^\"\\'\n]*)([\\'\"]?)": {
             "filterFileRegex": ".*\\.(json|yaml|yml)",
-            "decorations":[
-                {
-                },
+            "decorations": [
+                {},
                 {
                     "color": "#4de0ff"
                 }
             ]
         },
         "([(//)#] ?)(TODO)(.*)": [
-            {
-            },
+            {},
             {
                 "overviewRulerColor": "#ffcc00",
                 "backgroundColor": "#ffcc00",
@@ -158,8 +161,7 @@
             }
         ],
         "([(//)#] ?)(FIXME)(.*)": [
-            {
-            },
+            {},
             {
                 "overviewRulerColor": "#ff0000",
                 "backgroundColor": "#ff0000",
@@ -169,5 +171,9 @@
         ]
     },
     "diffEditor.renderSideBySide": true,
-    "terminal.integrated.rendererType": "dom"
+    "terminal.integrated.rendererType": "dom",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "editor.formatOnSave": true,
+    "explorer.autoReveal": false
 }

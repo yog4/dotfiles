@@ -8,12 +8,28 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias ba='code ~/.oh-my-zsh ~/src/dotfiles ~/src/dotfiles/.bash/aliases ~/.local.bash_profile ~/.env.exports'
+
 # Shortcuts
+alias cds='cd ~/src'
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
+alias gits="git status -s"
+alias gitb="git branch"
+alias gitba="git branch -a"
+alias gitd="git diff"
+alias gitc="git show"
+alias gitl="git l"
+alias gitlp="git lp"
+alias gitll="git ll"
+alias gitllp="git llp"
+alias gitl="git log --decorate --stat --date=relative"
+alias gitlp="gitl -p"
+alias gitll="git log --graph --decorate --date=local --format=format:'%C(bold yellow)%h%C(reset) - %C(white)%ad%C(reset) %C(bold cyan)(%ar)%C(reset) %C(green)%an%C(reset): %C(white)%s%C(reset) %C(bold yellow)%d%C(reset)' --all"
+alias gitllp="gitll -p"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

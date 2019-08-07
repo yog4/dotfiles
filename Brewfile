@@ -1,7 +1,10 @@
+# Install Virtualbox before the cask (or untap caskroom/versions
+cask "virtualbox"
+
 #
 # Brew taps
 #
-tap "caskroom/cask"
+#tap "caskroom/cask"
 tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
@@ -11,7 +14,7 @@ tap "homebrew/services"
 # Browsers
 #
 cask 'firefox'
-cask "google-chrome"
+#cask "google-chrome"
 
 #
 # Terminal / Shell
@@ -58,7 +61,6 @@ brew "mono"
 # Virtualisation
 #
 cask "vagrant"
-cask "virtualbox"
 #brew "packer"
 #brew "qemu", args: ["with-sdl2"]
 brew "cdrtools"
@@ -72,7 +74,7 @@ brew "kubernetes-cli"
 #
 # Languages
 #
-cask "caskroom/versions/java8"
+#cask "caskroom/versions/java8"
 brew "node"
 #brew "go"
 
@@ -95,7 +97,7 @@ cask "google-backup-and-sync"
 # cask "duplicati"
 # Keyboard
 # cask "karabiner-elements"
-
+cask "drawio"
 brew "awscli"
 
 #
@@ -112,3 +114,10 @@ cask "keepassx"
 cask "ticktick"
 cask "spotify"
 
+# Finder Quick Look preview extensions - https://github.com/sindresorhus/quick-look-plugins
+cask "qlcolorcode"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlimagesize"
+cask "qlvideo"

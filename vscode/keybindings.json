@@ -76,5 +76,13 @@
   {
     "key": "shift+alt+cmd+b",
     "command": "bookmarksExplorer.focus"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer"
   }
 ]

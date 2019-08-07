@@ -1,5 +1,3 @@
-DotJoshJohnson.xml
-PeterJausovec.vscode-docker
 alefragnani.Bookmarks
 alefragnani.copy-word
 alefragnani.jenkins-status
@@ -10,8 +8,6 @@ bradgashler.htmltagwrap
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 codezombiech.gitignore
-daltonjorge.scala
-dragos.scala-lsp
 eamodio.gitlens
 eg2.tslint
 eriklynd.json-tools
@@ -25,7 +21,6 @@ mikestead.dotenv
 mohsen1.prettify-json
 morrislaptop.vscode-open-in-sourcetree
 ms-python.python
-ms-vscode.csharp
 ms-vscode.PowerShell
 mushan.vscode-paste-image
 narekmal.vscode-run-git-difftool

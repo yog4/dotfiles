@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+alias swagger='docker run -d -p 8080:8080 dockerhub.artifactory.ai.cba/swaggerapi/swagger-editor'
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -8,7 +10,10 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-alias ba='code ~/.oh-my-zsh ~/src/dotfiles ~/src/dotfiles/.bash/aliases ~/.local.bash_profile ~/.env.exports'
+alias ba='code ~/.oh-my-zsh ~/src/dotfiles ~/src/dotfiles/.bash/aliases ~/.local.bash_profile ~/.env.exports /usr/local/etc/cntlm.conf'
+
+alias fw_start='sudo /usr/local/McAfee/StatefulFirewall/bin/StatefullFirewallControl start'
+alias fw_stop='sudo /usr/local/McAfee/StatefulFirewall/bin/StatefullFirewallControl stop'
 
 # Shortcuts
 alias cds='cd ~/src'
